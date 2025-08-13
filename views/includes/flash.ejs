@@ -6,7 +6,7 @@
 <% } %>
 
 <% if (error && error.length) { %>
-    <div class="alert alert-danger alert-dismissible fade show col-6 offset-3" role="alert">
+    <div class="alert alert-danger alert-dismissible fade show col-6 offset-3 flash-alert" role="alert">
         <%= error %>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
@@ -15,7 +15,7 @@
 <script>
     // Auto-dismiss alerts after 3 seconds
     setTimeout(function () {
-        document.querySelectorAll('.alert').forEach(function (alertEl) {
+        document.querySelectorAll('.flash-alert').forEach(function (alertEl) {
             let bsAlert = new bootstrap.Alert(alertEl);
             bsAlert.close();
         });

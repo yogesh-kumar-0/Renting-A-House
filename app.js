@@ -107,6 +107,7 @@ app.use('findOneAndDelete', (req, res, next) => {
   next();
 });
 // Mount the routers
+
 app.use("/listing", listingRouter);
 
 app.use("/listing/:id/review", reviewRoutes);
@@ -127,13 +128,16 @@ app.use("/user", userRoutes); // User routes
 // })
 
 //routes
+app.get('/',(req,res)=>{
+  
+  res.render('listing/home.ejs');
+});
 
 
 
-
-// app.use((req, res, next) => {
-//   next(new ExpressError(404, "Page not found"));
-// });
+app.use((req, res, next) => {
+  next(new ExpressError(404, "Page not found"));
+});
 
 app.use((err, req, res, next) => {
   let { statusCode = 500, message = "Something went wrong" } = err;

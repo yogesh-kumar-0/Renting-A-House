@@ -2,6 +2,8 @@
     background-color: plum;
 } */
  body{
+  font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #f8f9fa, #ffffff);
     color: black;
     display: flex;
     flex-direction: column;
@@ -10,6 +12,69 @@
     
 
  }
+  .hero {
+      background: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+
+    .btn-custom {
+      background: tomato;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 50px;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background: #e0482e;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .features .icon {
+      font-size: 2.5rem;
+      color: tomato;
+      margin-bottom: 1rem;
+    }
+
+    .features h4 {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
  .navbar{
     background-color: white;
  }
