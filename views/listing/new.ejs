@@ -1,0 +1,66 @@
+<% layout('layout/boilerplate') -%>
+<body >
+    <div>
+    <h2 class="offset-2 my-3 heading">Add New Listing Here </h2>
+    
+    <div class="row">
+        <div class="col-8 offset-2" >
+    
+    <form method="post" action="/listing/new" novalidate class="needs-validation" enctype="multipart/form-data"> 
+        
+        <div class="mb-3">
+            <label for="title" class="form-label">Title<span style="color: red;">*</span></label><br>
+            <input name="lististing[title]" id='title' placeholder="Add a Title" type="text" class="form-control" required>
+            <div class="invalid-feedback">
+            Please provide a valid Title.
+            </div>
+        </div>
+       
+
+        <div class="mb-3"><label for="description" class="form-label">Description<span style="color: red;">*</span></label><br>
+        <textarea name="lististing[description]" id="description" placeholder="Enter Discription" class="form-control" required type="text"></textarea>
+        <div class="invalid-feedback">
+            Please provide a valid description.
+        </div>
+        </div>
+        
+        <div class="mb-3"><label for="image" class="form-label">Upload Image</label><br>
+        <input name="lististing[image]" id="image" class="form-control" type="file" required >
+        <div class="invalid-feedback">
+            Please provide a valid image.
+            </div>
+        
+        </div>
+        <div class="row">
+        <div class="mb-3 col-4"><label for="price" class="form-label">Price<span style="color: red;">*</span></label><br>
+        <input name="lististing[price]" id="price" placeholder="1200" required class="form-control" type="number">
+        <div class="invalid-feedback">
+            Please provide a valid price.
+      </div>
+        </div>
+        
+        <div class="mb-3 col" ><label for="location" class="form-label">Location<span style="color: red;">*</span></label><br>
+        <input name="lististing[location]" id="location" required placeholder="New delhi, delhi" class="form-control" type="text">
+         <div class="invalid-feedback">
+            Please provide a valid location.
+      </div>
+        </div>
+        </div>
+        
+        <div class="mb-3 "><label for="country" class="form-label">Country<span style="color: red;">*</span></label><br>
+         <input name="lististing[country]" id="country" required placeholder="india" class="form-control" type="text">
+         <div class="invalid-feedback">
+            Please provide a valid country.
+      </div>
+         </div>
+        
+        
+        <button class="btn mb-3 mt-5 btncol" type="submit"> Submit </button>
+        <br><br>
+
+    </form>
+    
+</div>
+</div>  
+</div>  
+</body>

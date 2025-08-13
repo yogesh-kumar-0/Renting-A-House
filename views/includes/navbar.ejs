@@ -1,0 +1,62 @@
+<style>
+.btnSearch
+{
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border-radius: 25px;
+ display: flex;
+ justify-content: space-between;
+}
+.btnSearch:hover{
+  background-color: tomato;
+  color: white;
+
+}
+.inp-search{
+  border-radius: 10px;
+  padding: 8px;
+}
+
+/* .btnSearch{
+  outline: tomato;
+  background-color: white;
+  color: black;
+} */
+</style>
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/listing"><i class="fa-solid fa-compass"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <!-- <a class="nav-link " href="/">Home</a> -->
+         
+         
+        <a class="nav-link  btn" href="/listing">Explore</a>
+        <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+      </div>
+      <div class="navbar-nav ms-auto"> <form class="d-flex" role="search">
+      <input class="form-control me-2 inp-search" type="search" placeholder="Search Location" aria-label="Search"/>
+      <button class="btn btn-outline-danger btnSearch " type="submit"><span><i class="fa-solid fa-magnifying-glass me-2"></i></span>  Search </button>
+    </form>
+  </div>
+
+      <div class="navbar-nav ms-auto">
+       
+
+        <% if(!currUser)  {%>
+        <a class="nav-link btn btncol me-3 " href="/user/signup">Sign up</a>
+        <a class="btn btn-dark " href="/user/login">Login</a>
+        <% } else {%>
+          <% if (!currPage){ %>
+           
+                <a class="nav-link" href="/listing/new"><h5> <button class="btn btncol">Add New</button></h5></a>
+                <% } %>
+        <a class=" nav-link " href="/user/logout"><h5> <button class="btn btncol">Logout</button></h5></a>
+        <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+         <% } %>
+      </div>
+    </div>
+  </div>
+</nav>
