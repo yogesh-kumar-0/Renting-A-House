@@ -1,122 +1,57 @@
-# Horizn
+# Rent A House
 
 ## Introduction
 
-Horizn is a web application built with React, Vite, and TypeScript. It provides a structured platform for managing and displaying information using a modular and extensible component-based architecture. The repository is organized to support clear separation of logic, presentation, and assets, making it suitable for scalable frontend development.
-
-## Features
-
-- Modular React component structure
-- TypeScript for robust type safety
-- Vite-based fast development environment
-- Organized asset and utility management
-- Theming support for light and dark modes
-- State management with context and custom hooks
-- Customizable icon system
-- Support for global application settings
-
-## Requirements
-
-- Node.js (version 18 or higher)
-- npm (version 9 or higher) or compatible package manager
-
-## Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/Arjun-SN04/horizn.git
-   cd horizn
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-## Configuration
-
-- Main configuration files are located at the project root and in the `src/config` directory.
-- Modify `src/config/theme.ts` to customize application themes.
-- Update `src/config/app.ts` for application-specific constants.
-
-### Environment Variables
-
-- Create a `.env` file at the root if environment-specific settings are required.
-- Use standard Vite environment variable naming (e.g., `VITE_API_URL`).
+This repository contains a comprehensive e-commerce web application. It provides features for user registration, authentication, product browsing, cart management, order processing, and administrative management. The application is structured with clear separation between client-side and server-side logic, making it suitable for both end-users and administrators. You can access the deployed application at https://renting-a-house-umn6.vercel.app/.
 
 ## Usage
 
-### Development
+To use this e-commerce application, begin by installing the required dependencies. You can run the server and the client separately to start interacting with the platform. The application supports typical e-commerce flows such as browsing products, adding items to a cart, placing orders, and managing products if you are an admin.
 
-To start the development server:
+Typical usage steps:
+- Clone the repository to your local machine.
+- Install dependencies for both frontend and backend.
+- Start the backend server.
+- Start the frontend development server.
+- Access the application through your web browser.
 
-```bash
-npm run dev
-```
+## Configuration
 
-Access the application at `http://localhost:5173`.
+The application requires configuration for environment variables and database connections. Before starting, set the required environment variables such as database credentials, JWT secret keys, and other sensitive information in an `.env` file.
 
-### Production Build
-
-To build for production:
-
-```bash
-npm run build
-```
-
-The output will be generated in the `dist` directory.
-
-### Linting
-
-To run code linting:
-
-```bash
-npm run lint
-```
-
-### Application Structure
-
-- `src/components`: Reusable UI components such as Button, Card, Header, Sidebar, and ThemeSwitcher.
-- `src/assets`: Static assets including images and SVG icons.
-- `src/config`: Theming and application configuration files.
-- `src/context`: Application context and state providers.
-- `src/hooks`: Custom React hooks for state and effect management.
-- `src/icons`: Custom SVG icon components.
-- `src/pages`: Top-level pages for routing.
-- `src/utils`: Utility functions and helpers.
-- `src/App.tsx`: Main application entry point.
-- `src/main.tsx`: Vite bootstrapping and React DOM rendering.
-
-### Theming
-
-- The application supports both light and dark themes.
-- The ThemeSwitcher component allows toggling between themes.
-- Theme values and class names are defined in `src/config/theme.ts`.
-
-### State Management
-
-- Uses React context to provide global state.
-- Custom hooks in `src/hooks` manage and access the context.
-
-### Icons
-
-- Custom icon components are stored in `src/icons`.
-- Icons are React components returning SVG markup.
-
-### Routing
-
-- Page-level components are in `src/pages`.
-- Main routing logic is handled in `src/App.tsx`.
+General configuration steps:
+- Create an `.env` file in the backend directory.
+- Specify database connection strings, authentication secrets, and other configurable values.
+- Adjust client-side settings if needed (such as API base URLs).
 
 ## Contributing
 
-- Fork the repository and create your feature branch.
-- Commit your changes with clear messages.
-- Ensure code passes linting and builds successfully.
-- Open a pull request with a detailed description.
+To contribute to this repository:
+- Fork the repository and create a new branch for your feature or bugfix.
+- Make your changes with clear and concise commit messages.
+- Ensure your code follows the existing style and conventions.
+- Test changes locally before submitting a pull request.
+- Submit a pull request describing your changes and the rationale behind them.
+
+## Features
+
+- User registration and authentication
+- Product catalog with categories
+- Shopping cart functionality
+- Order creation and management
+- Administrative product management
+- Secure password handling and session management
+- Responsive user interface for desktop and mobile
+- API endpoints for various resources
+
+## Requirements
+
+- Node.js and npm (for backend and frontend)
+- MongoDB or another compatible database
+- Modern web browser for client-side
+- Environment configuration file (.env) for sensitive settings
+- Internet connection for dependency installation
 
 ---
 
-Horizn is designed to be modular, extensible, and developer-friendly, supporting rapid frontend development with modern tooling and best practices.
+This documentation summarizes the core structure and operation of the e-commerce repository. For specific implementation details, refer to the codebase and inline documentation.
