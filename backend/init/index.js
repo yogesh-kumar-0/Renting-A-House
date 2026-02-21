@@ -9,7 +9,7 @@
 
 
 // async function main() {
-//     await mongodb.connect('mongodb://localhost:27017/wanderlust');
+//     await mongodb.connect('mongodb://localhost:27017/rent-a-house');
     
 // }
 // main().then(()=>{

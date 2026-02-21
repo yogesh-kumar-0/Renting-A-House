@@ -2,9 +2,9 @@
   "engines": {
     "node": "22.x"
   },
-  "name": "wanderlust-backend",
+  "name": "rent-a-house-backend",
   "version": "1.0.0",
-  "description": "WanderLust Backend API Server",
+  "description": "Rent a House Backend API Server",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",

@@ -2,9 +2,9 @@
   "engines": {
     "node": "22.x"
   },
-  "name": "wanderlust-frontend",
+  "name": "rent-a-house-frontend",
   "version": "1.0.0",
-  "description": "WanderLust Frontend React Application",
+  "description": "Rent a House Frontend React Application",
   "type": "module",
   "scripts": {
     "dev": "vite",

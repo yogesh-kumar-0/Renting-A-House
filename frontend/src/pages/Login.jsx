@@ -40,11 +40,11 @@ export const Login = () => {
       <div className="w-full max-w-md bg-white rounded-3xl border border-gray-100 p-10 shadow-md">
         {/* Logo */}
         <div className="text-center mb-8">
-          <div className="w-12 h-12 bg-red-50 rounded-2xl flex items-center justify-center mx-auto mb-4">
-            <i className="fa-solid fa-compass text-red-500 text-xl"></i>
+          <div className="w-12 h-12 bg-cyan-50 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <i className="fa-solid fa-house text-blue-600 text-xl"></i>
           </div>
           <h1 className="text-2xl font-bold text-gray-900 mb-1.5 tracking-tight">Welcome back</h1>
-          <p className="text-xs text-gray-400">Sign in to your WanderLust account</p>
+          <p className="text-xs text-gray-400">Sign in to your Rent a House account</p>
         </div>
 
         <form onSubmit={handleSubmit} noValidate>

@@ -2,9 +2,9 @@
   "engines": {
     "node": "22.17.1"
   },
-  "name": "wanderlust",
+  "name": "rent-a-house",
   "version": "1.0.0",
-  "description": "WanderLust - Travel Listing Platform",
+  "description": "Rent a House - Property Rental Platform",
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd backend && npm run dev",

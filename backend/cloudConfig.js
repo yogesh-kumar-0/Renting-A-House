@@ -13,7 +13,7 @@ const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const storage = new CloudinaryStorage({
   cloudinary,
   params: {
-    folder: 'wanderlust',
+    folder: 'rent-a-house',
     allowed_formats: ['jpg', 'png', 'jpeg'],
   },
 });

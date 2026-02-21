@@ -53,10 +53,10 @@ export const Navbar = () => {
 
         {/* Brand */}
         <Link to="/" className="flex items-center gap-2 no-underline flex-shrink-0">
-          <div className="w-8 h-8 rounded-xl bg-gradient-to-r from-red-500 to-orange-500 flex items-center justify-center">
-            <i className="fa-solid fa-compass text-white text-sm"></i>
+          <div className="w-8 h-8 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 flex items-center justify-center">
+            <i className="fa-solid fa-house text-white text-sm"></i>
           </div>
-          <span className="font-bold text-gray-900 text-base tracking-tight">WanderLust</span>
+          <span className="font-bold text-gray-900 text-base tracking-tight">Rent a House</span>
         </Link>
 
         {/* Search — hidden on mobile, visible md+ */}

@@ -120,7 +120,7 @@ app.use('/user',               userRoutes);
 app.get('/', (req, res) => {
   res.json({
     status:   'ok',
-    message:  'WanderLust API is running',
+    message:  'Rent a House API is running',
     frontend: process.env.FRONTEND_URL || 'not set',
     env:      process.env.NODE_ENV,
   });

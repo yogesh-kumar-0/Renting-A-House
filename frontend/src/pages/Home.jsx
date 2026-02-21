@@ -156,14 +156,14 @@ export const Home = () => {
         <div className="absolute bottom-[-40px] left-[-40px] w-60 h-60 rounded-full pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(78,205,196,0.1), transparent 70%)' }}></div>
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <div className={`fade-up d1 ${visible ? 'show' : ''} inline-flex items-center gap-2 bg-white border border-red-200 rounded-full px-4 py-1.5 mb-7 shadow-sm`}>
-            <span className="w-2 h-2 bg-red-500 rounded-full inline-block" style={{ animation: 'float 2s ease-in-out infinite' }}></span>
-            <span className="text-xs text-gray-600 font-medium">10,000+ listings across 150+ countries</span>
+          <div className={`fade-up d1 ${visible ? 'show' : ''} inline-flex items-center gap-2 bg-white border border-blue-200 rounded-full px-4 py-1.5 mb-7 shadow-sm`}>
+            <span className="w-2 h-2 bg-blue-600 rounded-full inline-block" style={{ animation: 'float 2s ease-in-out infinite' }}></span>
+            <span className="text-xs text-gray-600 font-medium\">50,000+ properties across 100+ cities</span>
           </div>
 
           <h1 className={`fade-up d2 ${visible ? 'show' : ''} text-5xl md:text-7xl font-black text-gray-900 mb-5 leading-tight tracking-tight`}>
             Welcome to{' '}
-            <span className="hero-badge">WanderLust</span>
+            <span className="hero-badge">Rent a House</span>
           </h1>
 
           <p className={`fade-up d3 ${visible ? 'show' : ''} text-lg text-gray-700 leading-relaxed mb-4 max-w-2xl mx-auto`}>
@@ -181,16 +181,16 @@ export const Home = () => {
           )}
 
           <div className={`fade-up d4 ${visible ? 'show' : ''} flex gap-3 justify-center flex-wrap mb-12`}>
-            <Link to="/listing" className="px-8 py-3.5 rounded-2xl bg-gradient-to-r from-red-500 to-orange-500 text-white font-bold text-base no-underline shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5">
-              Explore Listings
+            <Link to="/listing" className="px-8 py-3.5 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-bold text-base no-underline shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5">
+              Explore Properties
             </Link>
             {user ? (
-              <Link to="/listing/new" className="px-8 py-3.5 rounded-2xl bg-white text-gray-700 font-semibold text-base no-underline border border-gray-300 transition-all hover:border-red-500 hover:text-red-500">
-                + Add Your Place
+              <Link to="/listing/new" className="px-8 py-3.5 rounded-2xl bg-white text-gray-700 font-semibold text-base no-underline border border-gray-300 transition-all hover:border-blue-600 hover:text-blue-600">
+                + Add Your Property
               </Link>
             ) : (
               <>
-                <Link to="/user/signup" className="px-8 py-3.5 rounded-2xl bg-white text-gray-700 font-semibold text-base no-underline border border-gray-300 transition-all hover:border-red-500 hover:text-red-500">
+                <Link to="/user/signup" className="px-8 py-3.5 rounded-2xl bg-white text-gray-700 font-semibold text-base no-underline border border-gray-300 transition-all hover:border-blue-600 hover:text-blue-600">
                   Sign Up Free
                 </Link>
                 <Link to="/user/login" className="px-8 py-3.5 rounded-2xl bg-gray-900 text-white font-semibold text-base no-underline transition-all">
@@ -214,12 +214,12 @@ export const Home = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-end mb-8 flex-wrap gap-3">
             <div>
-              <p className="text-xs tracking-wider uppercase text-red-500 font-bold mb-2">Explore</p>
+              <p className="text-xs tracking-wider uppercase text-blue-600 font-bold mb-2">Explore</p>
               <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-0 tracking-tight">
                 Popular Destinations
               </h2>
             </div>
-            <Link to="/listing" className="text-red-500 font-semibold text-sm no-underline flex items-center gap-1.5">
+            <Link to="/listing" className="text-blue-600 font-semibold text-sm no-underline flex items-center gap-1.5">
               View all <i className="fa-solid fa-arrow-right text-xs"></i>
             </Link>
           </div>
@@ -245,9 +245,9 @@ export const Home = () => {
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
-            <p className="text-xs tracking-wider uppercase text-red-500 font-bold mb-2">Why WanderLust</p>
+            <p className="text-xs tracking-wider uppercase text-blue-600 font-bold mb-2\">Why Rent a House</p>
             <h2 className="text-3xl md:text-4xl font-black text-gray-900 tracking-tight">
-              Everything you need to travel smarter
+              Everything you need to find your perfect home
             </h2>
           </div>
 
@@ -276,22 +276,22 @@ export const Home = () => {
       {!user && (
         <section className="py-20 px-6">
           <div className="max-w-3xl mx-auto">
-            <div className="bg-gradient-to-r from-red-500 via-orange-500 to-amber-500 rounded-3xl px-10 py-16 text-center relative overflow-hidden">
+            <div className="bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-500 rounded-3xl px-10 py-16 text-center relative overflow-hidden">
               <div className="absolute top-[-40px] right-[-40px] w-56 h-56 bg-white/8 rounded-full"></div>
               <div className="absolute bottom-[-60px] left-[-30px] w-60 h-60 bg-white/5 rounded-full"></div>
               <div className="relative z-10">
                 <h2 className="text-3xl md:text-4xl font-black text-white mb-3 tracking-tight">
-                  Ready to start your adventure?
+                  Ready to find your perfect home?
                 </h2>
                 <p className="text-white/80 mb-9 text-base">
-                  Join millions of travelers discovering the world differently.
+                  Discover your ideal property from thousands of verified listings.
                 </p>
                 <div className="flex gap-3 justify-center flex-wrap">
-                  <Link to="/user/signup" className="px-9 py-3.5 rounded-2xl bg-white text-orange-500 font-bold text-base no-underline shadow-lg hover:shadow-xl transition-all">
+                  <Link to="/user/signup" className="px-9 py-3.5 rounded-2xl bg-white text-cyan-600 font-bold text-base no-underline shadow-lg hover:shadow-xl transition-all">
                     Get Started Free
                   </Link>
                   <Link to="/listing" className="px-9 py-3.5 rounded-2xl bg-transparent text-white font-semibold text-base no-underline border border-white/50 transition-all hover:bg-white/10">
-                    Browse Listings
+                    Browse Properties
                   </Link>
                 </div>
               </div>
