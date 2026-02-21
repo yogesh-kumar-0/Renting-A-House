@@ -1,0 +1,33 @@
+{
+  "engines": {
+    "node": "22.x"
+  },
+  "name": "wanderlust-frontend",
+  "version": "1.0.0",
+  "description": "WanderLust Frontend React Application",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "@tailwindcss/vite": "^4.2.0",
+    "axios": "^1.6.2",
+    "bootstrap": "^5.3.7",
+    "mapbox-gl": "^3.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "tailwindcss": "^4.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "sass": "^1.89.2",
+    "vite": "^7.0.6"
+  }
+}

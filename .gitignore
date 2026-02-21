@@ -1,0 +1,34 @@
+# Environment variables — NEVER commit secrets
+.env
+**/.env
+# Allow production env files (contain only public URLs, no secrets)
+!**/.env.production
+!.env.production
+
+# Dependencies
+node_modules
+**/node_modules
+
+# Build output
+dist
+**/dist
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Uploads (local only, Cloudinary handles production)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Misc
+Oracle_JDK-24
+notes
